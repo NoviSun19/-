@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои Игры</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0f0f1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        header { margin: 30px 0; }
+        .avatar {
+            width: 80px; height: 80px;
+            border-radius: 50%;
+            background: #e94560;
+            margin: 0 auto 15px;
+            font-size: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 { font-size: 24px; }
+        header p { color: #888; font-size: 14px; margin-top: 5px; }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #1a1a2e;
+            border-radius: 16px;
+            padding: 20px;
+            width: 160px;
+            text-align: center;
+        }
+        .card .icon {
+            width: 70px; height: 70px;
+            border-radius: 18px;
+            background: #16213e;
+            margin: 0 auto 12px;
+            font-size: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card h3 { font-size: 16px; margin-bottom: 4px; }
+        .card .genre { color: #888; font-size: 12px; margin-bottom: 12px; }
+        .card .btn {
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 4px 0;
+        }
+        .btn-download { background: #e94560; color: white; }
+        .btn-buy { background: #ffd700; color: black; }
+        .btn-demo { background: transparent; border: 1px solid #555; color: #ccc; }
+
+        .card-soon {
+            background: #1a1a2e;
+            border: 2px dashed #333;
+            opacity: 0.6;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 12px;
+            color: #444;
+        }
+        footer a { color: #e94560; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="avatar">🙃🙂</div>
+        <h1>NoviSun21</h1>
+        <p>Инди-разработчик. Создаю игры на телефоне.</p>
+    </header>
+
+    <div class="grid">
+
+        <!-- ИГРА 1 -->
+        <div class="card">
+            <div class="icon">🛡️</div>
+            <h3>VirusChecker</h3>
+            <div class="genre">RPG / Экшен</div>
+            <a class="btn btn-demo" href="https://novisun21.itch.io/viruschecker">🎁 Демо</a>
+            <a class="btn btn-buy" href="https://yoomoney.ru/to/4100119553708429
+            ">💰 Купить</a>
+        </div>
+
+        <!-- ИГРА 2 -->
+        <div class="card">
+            <div class="icon">🚀</div>
+            <h3>Космо-Бег</h3>
+            <div class="genre">Раннер</div>
+            <a class="btn btn-download" href="#">📱 Скачать</a>
+        </div>
+
+        <!-- СКОРО -->
+        <div class="card card-soon">
+            <div class="icon">❓</div>
+            <h3>Новый проект</h3>
+            <div class="genre">???</div>
+            <a class="btn btn-demo" style="opacity:0.4;">Скоро...</a>
+        </div>
+
+    </div>
+
+    <footer>
+        Связь: <a href="#">Email</a> | <a href="#">Telegram</a>
+        <br>© 2025 — Все игры сделаны на телефоне
+    </footer>
+
+</body>
+</html>
